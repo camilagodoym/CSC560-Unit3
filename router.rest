@@ -1,0 +1,55 @@
+
+GET http://localhost:8080/api/team
+
+###
+
+GET http://localhost:8080/api/team/
+
+
+###
+
+POST http://localhost:8080/api/team
+Content-Type: application/json
+
+{
+        "first_name" : "Robert",
+        "last_name": "Lewandowski",
+        "team": "Bayern Munich Squad",
+        "minutes_playes": 364,
+        "goals": 10,
+        "assists": 3,
+        "yellow_cards":1,
+        "red_card": 0,
+        "pass":81.9,
+        "aerialsWon":1,
+        "man_of_the_match":3,
+        "rating": 8.77,
+        "shots_per_game": 5.8
+    }
+
+
+###
+
+DELETE http://localhost:8080/api/team/5fb179264ad3c13535e4fed4
+
+###
+
+PUT http://localhost:8080/api/team/5fb086e82aae0a3b71f7c616
+Content-Type: application/json
+
+    {
+      "first_name": "Leo",
+      "last_name": "Goretzka",
+      "team": "Bayern Munich Squad",
+      "minutes_playes": 329,
+      "goals": 1,
+      "assists": 1,
+      "yellow_cards": 1,
+      "red_card": 0,
+      "pass": 89.4,
+      "aerialsWon": 0.6,
+      "man_of_the_match": 0,
+      "rating": 7.26,
+      "shots_per_game": 1.8,
+      "__v": 0
+    }
